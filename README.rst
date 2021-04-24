@@ -49,10 +49,10 @@ to the program. CircuitFileTest is a similar program that also shows how to
 use the SCD read/write functions to store the generated circuit in a file.
 
 - To build LargeCircuitTest, run: ``make Large``
-- followed by: ``./bin/LargeCircuitTest.out <number_of_gates_in_thousands>``
+- To run: ``cd bin`` and ``LD_LIBRARY_PATH=../../msgpack-c ./LargeCircuitTest.out <number_of_gates_in_thousands>``
 
 - To build CircuitFileTest, run: ``make File``
-- followed by: ``./bin/CircuitFileTest.out <number_of_gates_in_thousands>``
+- To run: ``cd bin`` and ``LD_LIBRARY_PATH=../../msgpack-c ./CircuitFileTest.out <number_of_gates_in_thousands>``
 
 AESFullTest builds an AES circuit, then garbles and evaluates the circuit.
 The circuit is built in stages, using smaller circuits that implement the 
@@ -65,7 +65,7 @@ the building step has to be performed only once. Subsequent runs can just
 use the circuit from the file and save time.
 
 - To build AESFullTest, run ``make AES``
-- followed by ``./bin/AESFullTest.out``
+- To run: ``cd bin`` and ``LD_LIBRARY_PATH=../../msgpack-c ./bin/AESFullTest.out``
 
 To use JustGarble in your system, a good starting point would be looking at
 LargeCircuitTest if you plan to generate circuits on the fly, and 
